@@ -13,11 +13,9 @@ You will also need to be in range of a Gateway connected to The Things Network w
 ## Step 1 - Physical Setup
 To set up the device, attach the Lora Shield to the Arduino, attach the antenna to the Lora Shield, and plug the Arduino into your computer.
 
-- First attach the Lora Shield to the Arduino by slotting the shields bottom pins into the Arduino ports, ensuring that the pins labels on the shield match with the port labels on the Arduino (e.g., the GND pin on the shield enters the GND port on the Arduino).
-
-- Once the Lora Shield is attached to the Arduino, take the antenna that came with the Lora Shield and attach it to the metal input on the shield and fasten the hand screw to fix it in place.
-
-- Finally, use the USB port on the Arduino and the USB cable to connect to a computer.
+1. First attach the Lora Shield to the Arduino by slotting the shields bottom pins into the Arduino ports, ensuring that the pins labels on the shield match with the port labels on the Arduino (e.g. the GND pin on the shield enters the GND port on the Arduino).
+2. Now take the antenna that came with the Lora Shield and attach it.
+3. Finally, use the USB port on the Arduino and the USB cable to connect to a computer.
 
 ## Step 2 - Setting up the Environment
 
