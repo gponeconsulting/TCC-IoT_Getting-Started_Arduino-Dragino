@@ -4,13 +4,13 @@ To follow this guide, you will need the following:
 - An [Arduino Uno](https://www.jaycar.com.au/duinotech-uno-r3-development-board/p/XC4410) or [Arduino Mega](https://www.jaycar.com.au/duinotech-mega-2560-r3-board-for-arduino/p/XC4420)
 - A [Dragino Lora Shield](https://www.jaycar.com.au/arduino-compatible-long-range-lora-shield/p/XC4392) for the Arduino
 - A computer to connect to the Arduino and write the code
-- A USB A to USB B cable to connect the Arduino to the your computer
+- A USB A to USB B cable to connect the Arduino to your computer
 
 
 You will also need to be in range of a Gateway connected to The Things Network which you can find out about [here](https://www.thethingsnetwork.org/community).
 
 
-## Step 1 - Physical setup
+## Step 1 - Physical Setup
 To set up the device, attach the Lora Shield to the Arduino, attach the antenna to the Lora Shield, and plug the Arduino into your computer.
 
 - First attach the Lora Shield to the Arduino by slotting the shields bottom pins into the Arduino ports, ensuring that the pins labels on the shield match with the port labels on the Arduino (e.g., the GND pin on the shield enters the GND port on the Arduino).
@@ -19,7 +19,7 @@ To set up the device, attach the Lora Shield to the Arduino, attach the antenna 
 
 - Finally, use the USB port on the Arduino and the USB cable to connect to a computer.
 
-## Step 2 - Setting up the environment
+## Step 2 - Setting up the Environment
 
 To get started you will first need to install the Arduino IDE which can be downloaded [here](https://www.arduino.cc/en/software).
 After downloading the appropriate option for your system, run the installer and complete the installation process.
@@ -116,7 +116,7 @@ Now everything is set up for connecting to The Things Network.
 If everything went well it should post a Successful transmission every 60 seconds which you will also be able to see on The Things Network website in the device data section.  
 
 
-## Step 5 - Customising your message
+## Step 5 - Customising Your Message
 Right now the example code is sending the hex encoded message for `Hello, world!` which can be seen as `48 65 6C 6C 6F 2C 20 77 6F 72 6C 64 21` in The Things Network Data tab.
 We can change this to something else by changing the text in the line `static uint8_t mydata[] = "Hello, world!";` in the Arduino IDE.
 The time between messages can also be changed by changing the value of the line `const unsigned TX_INTERVAL = 60;` in the Arduino IDE.
