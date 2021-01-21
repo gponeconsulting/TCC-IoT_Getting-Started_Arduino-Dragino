@@ -4,7 +4,7 @@ To follow this guide, you will need the following:
 - An [Arduino Uno](https://www.jaycar.com.au/duinotech-uno-r3-development-board/p/XC4410) or [Arduino Mega](https://www.jaycar.com.au/duinotech-mega-2560-r3-board-for-arduino/p/XC4420)
 - A [Dragino Lora Shield](https://www.jaycar.com.au/arduino-compatible-long-range-lora-shield/p/XC4392) for the Arduino
 - A computer to connect to the Arduino and write the code
-- A usb A to usb B cable to connect the Arduino to the your computer
+- A USB A to USB B cable to connect the Arduino to the your computer
 
 
 You will also need to be in range of a Gateway connected to The Things Network which you can find out about [here](https://www.thethingsnetwork.org/community).
@@ -17,7 +17,7 @@ To set up the device, attach the Lora Shield to the Arduino, attach the antenna 
 
 - Once the Lora Shield is attached to the Arduino, take the antenna that came with the Lora Shield and attach it to the metal input on the shield and fasten the hand screw to fix it in place.
 
-- Finally, use the usb port on the Arduino and the usb cable to connect to a computer.
+- Finally, use the USB port on the Arduino and the USB cable to connect to a computer.
 
 ## Step 2 - Setting up the environment
 
@@ -110,7 +110,7 @@ const lmic_pinmap lmic_pins = {
 Now everything is set up for connecting to The Things Network.
 - Make sure that the serial monitor is closed
 - Click the arrow in the upper left corner to upload the code to the Arduino
-- After waiting for the code to upload you can now open the Serial Monitor through `Tools > Serial Monitor` and see the output. 
+- After waiting for the code to upload you can now open the Serial Monitor through `Tools > Serial Monitor` and see the output.
 - After the Serial Monitor is opened, in the bottom right section of the serial window set the dropdown to `115200 baud`
 
 If everything went well it should post a Successful transmission every 60 seconds which you will also be able to see on The Things Network website in the device data section.  
