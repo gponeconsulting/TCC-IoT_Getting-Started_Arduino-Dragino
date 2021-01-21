@@ -1,8 +1,8 @@
-# Lora Shield Guide
+# LoRa Shield Guide
 ## What you will need
 To follow this guide, you will need the following:
 - An [Arduino Uno](https://www.jaycar.com.au/duinotech-uno-r3-development-board/p/XC4410) or [Arduino Mega](https://www.jaycar.com.au/duinotech-mega-2560-r3-board-for-arduino/p/XC4420)
-- A [Dragino Lora Shield](https://www.jaycar.com.au/arduino-compatible-long-range-lora-shield/p/XC4392) for the Arduino
+- A [Dragino LoRa Shield](https://www.jaycar.com.au/arduino-compatible-long-range-lora-shield/p/XC4392) for the Arduino
 - A computer to connect to the Arduino and write the code
 - A USB A to USB B cable to connect the Arduino to your computer
 
@@ -11,10 +11,10 @@ You will also need to be in range of a Gateway connected to The Things Network w
 
 
 ## Step 1 - Physical Setup
-To set up the device, attach the Lora Shield to the Arduino, attach the antenna to the Lora Shield, and plug the Arduino into your computer.
+To set up the device, attach the LoRa Shield to the Arduino, attach the antenna to the LoRa Shield, and plug the Arduino into your computer.
 
-1. First attach the Lora Shield to the Arduino by slotting the shields bottom pins into the Arduino ports, ensuring that the pins labels on the shield match with the port labels on the Arduino (e.g. the GND pin on the shield enters the GND port on the Arduino).
-2. Now take the antenna that came with the Lora Shield and attach it.
+1. First attach the LoRa Shield to the Arduino by slotting the shields bottom pins into the Arduino ports, ensuring that the pins labels on the shield match with the port labels on the Arduino (e.g. the GND pin on the shield enters the GND port on the Arduino).
+2. Now take the antenna that came with the LoRa Shield and attach it.
 3. Finally, use the USB port on the Arduino and the USB cable to connect to a computer.
 
 ## Step 2 - Setting up the Environment
@@ -26,7 +26,7 @@ Once the program is done installing, open the Arduino IDE.
 Now that we are in the Arduino IDE, select the type of board you are using.
 - To do this, Navigate to Tools > Board: > Arduino AVR Boards > and then select the board that you are using (e.g., 'Arduino Uno' or 'Arduino Mega or Mega 2560')
 
-Now that the board has been correctly selected, install a library to help use the Lora Shield to connect to The Things Network.
+Now that the board has been correctly selected, install a library to help use the LoRa Shield to connect to The Things Network.
 
 - First, open the library manager by going to `Tools > Manage Libraries`
 - Next, in the bar at the top of the window search for `MCCI LoRaWAN LMIC library` and install the library with the same name.
@@ -96,7 +96,7 @@ In the code that has just been opened in the new window, we will need to change 
 
 4. Change the section that is labelled `Pin mapping` to the following code:
 ```
-// Pin mapping for Dragino Lorashield
+// Pin mapping for Dragino LoRashield
 const lmic_pinmap lmic_pins = {
     .nss = 10,
     .rxtx = LMIC_UNUSED_PIN,
