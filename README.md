@@ -121,15 +121,10 @@ For APPEUI and DEVEUI **ONLY** they need to be expressed as little-endian. Do th
 
 ![Code Format](/readme-images/code-format.png)
 
-1. Change the APPEUI to the `Application EUI` from your The Things Network Device Overview
- * Repalace the `FillMEIN` section of the following Arduino code
- `static const u1_t PROGMEM APPEUI[8]= { FILLMEIN };`
-2. Change the DEVEUI to the `Device EUI` from The Things Network Device Overview
- * Repalace the `FillMEIN` section of the following Arduino code
- `static const u1_t PROGMEM DEVEUI[8]= { FILLMEIN };`
-3. Change the APPKEY to the `App Key` from your The Things Network Device Overview
- * Repalace the `FillMEIN` section of the following Arduino code
- `static const u1_t PROGMEM APPKEY[16] = { FILLMEIN };`
+1. Change the `APPEUI` to the `Application EUI` from your The Things Network Device Overview: _Replace the `FillMEIN` section of the following Arduino code
+ `static const u1_t PROGMEM APPEUI[8]= { FILLMEIN };`_
+2. Change the DEVEUI to the `Device EUI` from The Things Network Device Overview _Replace the `FillMEIN` section of the following Arduino code `static const u1_t PROGMEM DEVEUI[8]= { FILLMEIN };`_
+3. Change the APPKEY to the `App Key` from your The Things Network Device Overview _Replace the `FillMEIN` section of the following Arduino code `static const u1_t PROGMEM APPKEY[16] = { FILLMEIN };`_
 4. Change the section that is labelled `Pin mapping` to the following code:
 ```
 // Pin mapping for Dragino LoRashield
