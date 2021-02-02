@@ -82,18 +82,21 @@ Now that we have the library installed, configure it to the Australian standard.
 
 The library has now been added & configured. Now to connect to The Things Network.
 
-## Step 3 - Sign Up on The Things Network
-Now that our environment is set up, we can prepare to connect to The Things Network by following the steps below.
+## Step 3 - Setup on The Things Network
+Now that our environment is set up, we can prepare to connect it to The Things Network by following the steps below.
 
-1. Create an account at [The Things Network](https://account.thethingsnetwork.org/register) or sign in if you already have an account
-2. Go to the console by clicking on the profile icon and clicking the console option.
-3. Select applications
-4. Select add application
-5. Fill out the application ID with a unique name, add a Description and press `add application`.
-6. Press the `register device` button in the devices section.
-7. Enter a unique name for the device ID
-8. Click the double-arrow icon on the left of the `Device EUI field` to generate an EUI
-9. Click `Register`.
+1. Sign in to [The Things Network](https://account.thethingsnetwork.org)
+ * Or create an account if you don't have one at [The Things Network](https://account.thethingsnetwork.org/register)
+1. Go to the console by clicking on the profile icon and clicking the console option.
+1. Select applications.
+1. Choose an existing application if you already have one you'd like to use, or select add application.
+  1. Fill out the application ID with a unique name, add a Description and press `add application`.
+1. Press the `register device` button in the devices section.
+1. Enter a unique name for the device ID.
+1. Click the double-arrow icon on the left of the `Device EUI field` to generate an EUI.
+1. Click `Register`.
+
+> Your device will now be registered and is ready to connect
 
 ![Add Application](readme-images/add-application.png)
 
@@ -116,7 +119,7 @@ In the code that has just been opened in the new window, we will need to change 
 3. APPKEY
 4. Pin mapping
 
-The APPEUI, DEVEUI, APPKEY come from the Device Overview that you created in Step 3 - Sign Up on The Things Network.
+The APPEUI, DEVEUI, APPKEY come from the Device Overview that you created in Step 3 - Setup on The Things Network.
 
 You will need these values in array format. do this by clicking the angle brackets '<>'. The codes should now be within curly brackets.
 
