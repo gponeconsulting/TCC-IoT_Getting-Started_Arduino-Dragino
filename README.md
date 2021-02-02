@@ -106,7 +106,7 @@ We are now be on a page which includes a device overview. Information on this pa
 ## Step 4 - Connecting the Arduino to The Things Network
 Now that a device is registered on The Things Network all that is left to do is configure the Arduino with that registration.
 
-In the Arduino IDE Navigate to `File > Examples > MCCI LoRaWAN LMIC library > ttn-otaa` which will open a new window.
+In the Arduino IDE Navigate to `File -> Examples -> MCCI LoRaWAN LMIC library > ttn-otaa` which will open a new window.
 
 ![Example Program](readme-images/example-program.png)
 
