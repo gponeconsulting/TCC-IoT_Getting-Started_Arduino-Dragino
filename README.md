@@ -86,11 +86,11 @@ The library has now been added & configured. Now to connect to The Things Networ
 Now that our environment is set up, we can prepare to connect it to The Things Network by following the steps below.
 
 1. Sign in to [The Things Network](https://account.thethingsnetwork.org)
- * Or create an account if you don't have one at [The Things Network](https://account.thethingsnetwork.org/register)
+    - Or create an account if you don't have one at [The Things Network](https://account.thethingsnetwork.org/register)
 1. Go to the console by clicking on the profile icon and clicking the console option.
 1. Select applications.
 1. Choose an existing application if you already have one you'd like to use, or select add application.
-  1. Fill out the application ID with a unique name, add a Description and press `add application`.
+    - If making a new application. Fill out the application ID with a unique name, add a Description and press `add application`.
 1. Press the `register device` button in the devices section.
 1. Enter a unique name for the device ID.
 1. Click the double-arrow icon on the left of the `Device EUI field` to generate an EUI.
