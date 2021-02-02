@@ -1,5 +1,4 @@
 # LoRa Shield Guide
-
 This guide is designed to help beginners set up an Arduino with a Dragino LoRa shield and connect to The Things Network.
 
 ## What you will need
@@ -132,7 +131,7 @@ For APPEUI and DEVEUI **ONLY** they need to be expressed as little-endian. Do th
 2. Change the DEVEUI to the `Device EUI` from The Things Network Device Overview _Replace the `FillMEIN` section of the following Arduino code `static const u1_t PROGMEM DEVEUI[8]= { FILLMEIN };`_
 3. Change the APPKEY to the `App Key` from your The Things Network Device Overview _Replace the `FillMEIN` section of the following Arduino code `static const u1_t PROGMEM APPKEY[16] = { FILLMEIN };`_
 4. Change the section that is labelled `Pin mapping` to the following code:
-```
+```C++
 // Pin mapping for Dragino LoRashield
 const lmic_pinmap lmic_pins = {
     .nss = 10,
