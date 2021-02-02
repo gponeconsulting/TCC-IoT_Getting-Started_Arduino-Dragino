@@ -15,7 +15,7 @@ To set up the device, attach the LoRa Shield to the Arduino, attach the antenna 
 2. Now take the antenna that came with the LoRa Shield and attach it.
 3. Finally, use the USB port on the Arduino and the USB cable to connect to a computer. *(You should see some little LED's light up on the Arduino and the LoRa shield).*
 
-![Arduino Physical Setup](/readme-images/arduino-physical-setup.jpg)
+![Arduino Physical Setup](readme-images/arduino-physical-setup.jpg)
 
 ## Step 2 - Setting up the Environment
 ### Install Arduino IDE
@@ -28,7 +28,7 @@ Once the program is done installing, open the Arduino IDE.
 ### Choose Board and Port
 Now that we are in the Arduino IDE, select the type of board you are using. To do this, Navigate to `Tools -> Board: <...>`and then select the board that you are using (e.g., 'Arduino Uno' or 'Arduino Mega or Mega 2560')
 
-![Select Arduino Board](/readme-images/select-arduino-board.png)
+![Select Arduino Board](readme-images/select-arduino-board.png)
 
 Now that the board has been correctly selected, we need to select the COM port the computer will use to communicate with the Arduino. To do this, Navigate to `Tools -> Port: <...>` and then select the COM port for the board you're using.
 
@@ -40,20 +40,20 @@ Now that the board has been correctly selected, we need to select the COM port t
 > 3. *Plug the Arduino back into the computer, notice the choice will reappear in the list.*
 > 4. *Select that COM port you now know is associated with the Arduino.*
 
-![Select Arduino COM Port](/readme-images/select-arduino-com.png)
+![Select Arduino COM Port](readme-images/select-arduino-com.png)
 
 At this stage you can now upload a program to the Arduino, and it's a good idea to do so and check your setup is working. We will upload the 'blank template' to the Arduino to test. To do this click the `upload` button (the right-facing arrow next to the tick). This will compile, and upload the program to the Arduino. If successful you should see a 'Done uploading' message.
 
-![Test Upload](/readme-images/test-upload.png)
+![Test Upload](readme-images/test-upload.png)
 
 ### Install & Configure Library for LoRa Shield
 Install a library to help use the LoRa Shield to connect to The Things Network.
 
-1. First, open the library manager by going to `Tools > Manage Libraries`
+1. First, open the library manager by going to `Tools -> Manage Libraries`
 2. Next, in the bar at the top of the window search for `MCCI LoRaWAN LMIC library` and install the library with the same name.
 3. When the install is finished, click close at the bottom of the window
 
-![Install LoRaWAN Library](/readme-images/search-for-library.png)
+![Install LoRaWAN Library](readme-images/search-for-library.png)
 
 Now that we have the library installed, configure it to the Australian standard.
 
@@ -92,20 +92,20 @@ Now that our environment is set up, we can prepare to connect to The Things Netw
 8. Click the double-arrow icon on the left of the `Device EUI field` to generate an EUI
 9. Click `Register`.
 
-![Add Application](/readme-images/add-application.png)
+![Add Application](readme-images/add-application.png)
 
-![Register Device](/readme-images/register-device.jpg)
+![Register Device](readme-images/register-device.jpg)
 
 We are now be on a page which includes a device overview. Information on this page will be used to configure the Arduino to connect and Authenticate with The Things Network.
 
-![Registered Device](/readme-images/registered-device.jpg)
+![Registered Device](readme-images/registered-device.jpg)
 
 ## Step 4 - Connecting the Arduino to The Things Network
 Now that a device is registered on The Things Network all that is left to do is configure the Arduino with that registration.
 
 In the Arduino IDE Navigate to `File > Examples > MCCI LoRaWAN LMIC library > ttn-otaa` which will open a new window.
 
-![Example Program](/readme-images/example-program.png)
+![Example Program](readme-images/example-program.png)
 
 In the code that has just been opened in the new window, we will need to change 4 things:
 1. APPEUI
@@ -119,7 +119,7 @@ You will need these values in array format. do this by clicking the angle bracke
 
 For APPEUI and DEVEUI **ONLY** they need to be expressed as little-endian. Do this by clicking the double arrow, *(right beside the angle brackets '<>')*.  The text 'lsb' will be visible indicating that the **l**east **s**ignificant **b**it is first.
 
-![Code Format](/readme-images/code-format.png)
+![Code Format](readme-images/code-format.png)
 
 1. Change the `APPEUI` to the `Application EUI` from your The Things Network Device Overview: _Replace the `FillMEIN` section of the following Arduino code
  `static const u1_t PROGMEM APPEUI[8]= { FILLMEIN };`_
@@ -136,7 +136,7 @@ const lmic_pinmap lmic_pins = {
 };
 ```
 
-![Example Program Changes](/readme-images/configure-arduino-with-registration.png)
+![Example Program Changes](readme-images/configure-arduino-with-registration.png)
 
 Now everything is set up for connecting to The Things Network:
 * Make sure that the serial monitor is closed
@@ -148,7 +148,7 @@ If everything went well it should post a Successful transmission every 60 second
 
 *Don't be worried if it fails to connect a few times*
 
-![Connect Successful](/readme-images/connect.png)
+![Connect Successful](readme-images/connect.png)
 
 ## Step 5 - Customising Your Message
 Right now the example code is sending the hex encoded message for `Hello, world!` which can be seen as `48 65 6C 6C 6F 2C 20 77 6F 72 6C 64 21` in The Things Network Data tab.
