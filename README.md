@@ -1,4 +1,7 @@
 # LoRa Shield Guide
+
+This guide is designed to help beginners set up an Arduino with a Dragino LoRa shield and connect to The Things Network.
+
 ## What you will need
 To follow this guide, you will need the following:
 - An [Arduino Uno](https://www.jaycar.com.au/duinotech-uno-r3-development-board/p/XC4410) or [Arduino Mega](https://www.jaycar.com.au/duinotech-mega-2560-r3-board-for-arduino/p/XC4420)
