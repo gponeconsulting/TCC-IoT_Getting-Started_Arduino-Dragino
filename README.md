@@ -97,7 +97,6 @@ Now that our environment is set up, we can prepare to connect it to The Things S
 1. Click `Start`
 1. Enter a unique name for the device ID.
 1. Press the `fill with zeros` button next to the AppEUI field
-1. Enter the device EUI code you copied from the previous step into the `Device EUI` section.
 
 > Currently The Things Stack does not have the ability to assign device EUI's for devices that do not have them. For now unless you have a spare DevEUI lying around we will have to use a workaround because the Dragino LoRa shield does not have an inbuilt DevEUI.
 13. Go to [random.org](https://www.random.org/bytes/)
@@ -108,7 +107,7 @@ Now that our environment is set up, we can prepare to connect it to The Things S
 1. Give your device a name and description
 1. Click `Network layer setting`.
 1. Set the Frequency plan as `Australia 915-928 MHz, FSB 2`
-1. Set the Regional Parameters version to `PHY V1.0.2 REV A`
+1. Set the Regional Parameters version to `PHY V1.0.2 REV B`
 1. Click `Join settings`
 1. Click the Generate button next to the AppKey field
 1. Click the `Add End Device` button
