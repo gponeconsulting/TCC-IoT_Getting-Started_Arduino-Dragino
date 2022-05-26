@@ -97,13 +97,7 @@ Now that our environment is set up, we can prepare to connect it to The Things S
 1. Click `Start`
 1. Enter a unique name for the device ID.
 1. Press the `fill with zeros` button next to the AppEUI field
-
-> Currently The Things Stack does not have the ability to assign device EUI's for devices that do not have them. For now unless you have a spare DevEUI lying around we will have to use a workaround because the Dragino LoRa shield does not have an inbuilt DevEUI.
-13. Go to [random.org](https://www.random.org/bytes/)
-1. Set the site to generate 8 random hexadecimal bytes and click the `Get Bytes` button 
-1. Copy the resulting value into the DevEuI field on The Things Stack and replace the first pair of values with `00`.
-
-
+1. Click the `Generate` button next to the devEUI field
 1. Give your device a name and description
 1. Click `Network layer setting`.
 1. Set the Frequency plan as `Australia 915-928 MHz, FSB 2`
